@@ -3,22 +3,19 @@
   <head>
     <title>Alice's Adventure</title>
     <script>
-      /*window.onerror = function (errorMsg, url, lineNumber) {
-				alert('Error: ' + errorMsg + ' Script: ' + url + ' Line: ' + lineNumber);
-		}*/
+      /* window.onerror = function(errorMsg, url, lineNumber) {
+	     alert('Error: ' + errorMsg + ' Script: ' + url + ' Line: ' + lineNumber);
+         } */
     </script>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <script>
       document.write('<base href="' + document.location + '" />');
     </script>
-    <!--script data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js" data-require="angular.js@1.2.x"></script-->
-    <!--script src="js/app.js"></script>
-      <script src="js/resizer.js"></script-->
+    <!-- <script data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js" data-require="angular.js@1.2.x"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+    <!-- <script src="js/resizer.js"></script> -->
     <script src="js/interact.js"></script>
     <script src="js/drag.js"></script>
     <script src="js/dropdown.js"></script>
@@ -37,7 +34,7 @@
     <!-- <script type="text/javascript" src="../Pages/js/puzzleNode.js"></script> -->
     <!-- <script type="text/javascript" src="../Scripts/EditorScripts/puzzleBuilder.js"></script> -->
   </head>
-  <!-- <body ng-controller="MainCtrl" onload="initializeEditor()"> -->
+  <!-- <body ng-controller="MainCtrl" onload="initializeEditor();"> -->
 
   <body ng-controller="MainCtrl" class="grid-container">
     <div class="grid-item-top-tab">
@@ -46,87 +43,36 @@
         <div class="tab-container">
           <ul>
             <div class="dropdown">
-              <i
-                class="fas fa-bars menu-icon dropbtn"
-                style="color: #6977EE; font-size: 20px; line-height: 30px"
-                onclick="dropdownShow(event)"
-              ></i>
-              <!-- <img
-                src="src/menu.png"
-                class="menu-icon dropbtn"
-                onclick="dropdownShow(event)"
-              /> -->
+              <i class="fas fa-bars menu-icon dropbtn" style="color: #6977EE; font-size: 20px; line-height: 30px;" onclick="dropdownShow(event);"></i>
+              <!-- <img src="src/menu.png" class="menu-icon dropbtn" onclick="dropdownShow(event);" /> -->
               <div class="dropdown-content">
-                <a
-                  class="dropdown-item"
-                  data-toggle="modal"
-                  data-target="#setting"
-                  >Game Setting</a
-                >
-                <a
-                  class="dropdown-item"
-                  onclick="AliceEditor.File.NewProject()"
-                >
-                  New Project</a
-                >
-                <a
-                  class="dropdown-item"
-                  onclick="AliceEditor.File.OpenProject()"
-                >
-                  Open Project</a
-                >
-                <a
-                  class="dropdown-item"
-                  onclick="AliceEditor.File.SaveProject()"
-                >
-                  Save Project</a
-                >
-                <a
-                  class="dropdown-item"
-                  onclick="AliceEditor.File.BuildProject()"
-                >
-                  Build Project</a
-                >
-                <a
-                  class="dropdown-item"
-                  data-toggle="modal"
-                  data-target="#about"
-                >
-                  About Project</a
-                >
+                <a class="dropdown-item" data-toggle="modal" data-target="#setting" title="Game Setting">Game Setting</a>
+                <a class="dropdown-item" onclick="AliceEditor.File.NewProject()" title="New Project">New Project</a>
+                <a class="dropdown-item" onclick="AliceEditor.File.OpenProject()" title="Open Project">Open Project</a>
+                <a class="dropdown-item" onclick="AliceEditor.File.SaveProject()" title="Save Project">Save Project</a>
+                <a class="dropdown-item" onclick="AliceEditor.File.BuildProject()" title="Build Project">Build Project</a>
+                <a class="dropdown-item" data-toggle="modal" data-target="#about" title="About Project">About Project</a>
               </div>
             </div>
-            <div
-              class="modal"
-              tabindex="-1"
-              role="dialog"
-              id="about"
-              data-backdrop="static"
-            >
+            <div class="modal" tabindex="-1" role="dialog" id="about" data-backdrop="static">
               <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content" style="text-align: center">
+                <div class="modal-content" style="text-align: center;">
                   <div class="modal-header">
                     <h5 class="modal-title">Another Alice Adventure</h5>
                     <div>
-                      <button
-                        type="button"
-                        id="close-icon-button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
+                      <button type="button" id="close-icon-button" class="close" data-dismiss="modal" aria-label="Close" title="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
                   </div>
                   <div class="modal-body">
-                    <p><b>Produced by</b></p>
+                    <p><b>Produced By</b></p>
                     <p>Chaojie Zhu</p>
-                    <p><b>Designed by</b></p>
+                    <p><b>Designed By</b></p>
                     <p>Xiao He, Ruofan Zhang</p>
-                    <p><b>Developed by</b></p>
+                    <p><b>Developed By</b></p>
                     <p>Xiao He, Yifeng Shi, Chaojie Zhu</p>
-                    <p><b>Special thanks to</b></p>
+                    <p><b>Special Thanks To</b></p>
                     <p>Project Universal Insignia for sharing the art assets</p>
                     <p>Mollie Braley for voice over in our video tutorials</p>
                   </div>
@@ -150,66 +96,38 @@
               >
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="settingLongTitle">
-                      Game Setting
-                    </h5>
-                    <button
-                      type="button"
-                      id="close-icon-button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                    >
+                    <h5 class="modal-title" id="settingLongTitle">Game Setting</h5>
+                    <button type="button" id="close-icon-button" class="close" data-dismiss="modal" aria-label="Close" title="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body" v-if="projLoaded">
                     <p>
-                      Project name
-                      <input type="text" v-model="settings.projectName" />
+                      Project Name
+                      <input type="text" v-model="settings.projectName" title="Project Name" />
                     </p>
                     <p>
                       Start Scene
                       <select v-model="settings.startScene">
-                        <option
-                          v-for="opt in sceneOptions"
-                          v-html="opt.name"
-                          v-bind:value="opt.id"
-                        >
-                        </option>
+                        <option v-for="opt in sceneOptions" v-html="opt.name" v-bind:value="opt.id"></option>
                       </select>
                     </p>
                     <p>
-                      Number of Containers in Inventory
+                      Number Of Containers In Inventory
                       <select v-model.number="settings.inventoryGridNum">
-                        <option
-                          v-for="opt in gridNumOptions"
-                          v-html="opt"
-                          v-bind:value="opt"
-                        ></option>
+                        <option v-for="opt in gridNumOptions" v-html="opt" v-bind:value="opt"></option>
                       </select>
                     </p>
                     <p>
                       Game Resolution
-                      <select v-model="res" v-on:change="changeRes()">
-                        <option
-                          v-for="opt in resOptions"
-                          v-html="opt.w+&quot; x &quot;+opt.h"
-                          v-bind:value="opt"
-                        >
-                        </option>
+                      <select v-model="res" v-on:change="changeRes();">
+                        <option v-for="opt in resOptions" v-html="opt.w+&quot; x &quot;+opt.h" v-bind:value="opt"></option>
                       </select>
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button
-                      type="button"
-                      id="close-button"
-                      data-dismiss="modal"
-                    >
-                      Confirm
-                    </button>
-                    <!--button type="button" id="save-button">Save changes</button-->
+                    <button type="button" id="close-button" data-dismiss="modal" title="Confirm">Confirm</button>
+                    <!-- <button type="button" id="save-button" title="Save Changes">Save Changes</button> -->
                   </div>
                 </div>
               </div>
@@ -229,14 +147,7 @@
                   <div class="modal-header">
                     <h5 class="modal-title">Run</h5>
                     <div>
-                      <button
-                        type="button"
-                        id="close-icon-button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                        v-on:click="stop()"
-                      >
+                      <button type="button" id="close-icon-button" class="close" data-dismiss="modal" aria-label="Close" v-on:click="stop()" title="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
@@ -418,7 +329,7 @@
                         </p>
                         <br />
                         <p>
-                          <b>Step 9:</b> Set the second puzzle as the winning
+                          <b>Step 9:</b> Set the 2nd puzzle as the winning
                           condition from the puzzle card.
                         </p>
                         <br />
@@ -440,7 +351,7 @@
                       </div>
                     </div>
                     <div v-if="showIntermediate">
-                      <video controls style="width: 75%">
+                      <video controls style="width: 75%;">
                         <source src="./src/Intermediate.mp4" type="video/mp4" />
                         <track
                           label="English"
@@ -450,10 +361,10 @@
                           default
                         />
                       </video>
-                      <h1>Step by step guide</h1>
+                      <h1>Step By Step Guide</h1>
                     </div>
                     <div v-if="showAdvanced">
-                      <video controls style="width: 75%">
+                      <video controls style="width: 75%;">
                         <source src="./src/Advanced.mp4" type="video/mp4" />
                         <track
                           label="English"
@@ -463,7 +374,7 @@
                           default
                         />
                       </video>
-                      <h1>Step by step guide</h1>
+                      <h1>Step By Step Guide</h1>
                     </div>
                   </div>
                 </div>
@@ -477,9 +388,10 @@
             data-toggle="modal"
             data-target="#run-view"
             onclick="AliceEditor.File.RunProject()"
+	    title="Play"
           >
             <i class="fas fa-play-circle"></i>
-            <div style="display: inline-block; ">Play</div>
+            <div style="display: inline-block;">Play</div>
           </button>
         </div>
       </div>
