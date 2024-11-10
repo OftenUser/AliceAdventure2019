@@ -16,7 +16,7 @@
 	"objectList": [
 		{
 			"id": 2,
-			"name": "Living room",
+			"name": "Living Room",
 			"src": "Assets/room_basic.png",
 			"pos": {
 				"x": 320,
@@ -36,7 +36,7 @@
 		},
 		{
 			"id": 3,
-			"name": "Door1",
+			"name": "Door 1",
 			"src": "Assets/door.png",
 			"pos": {
 				"x": 398,
@@ -96,7 +96,7 @@
 		},
 		{
 			"id": 6,
-			"name": "Door2",
+			"name": "Door 2",
 			"src": "Assets/door.png",
 			"pos": {
 				"x": 164,
@@ -176,7 +176,7 @@
 		},
 		{
 			"id": 16,
-			"name": "Knife with jam",
+			"name": "Knife With Jam",
 			"src": "Assets/knifewithjam.png",
 			"pos": {
 				"x": 72,
@@ -196,7 +196,7 @@
 		},
 		{
 			"id": 17,
-			"name": "Bread with jam",
+			"name": "Bread With Jam",
 			"src": "Assets/breadwithjam.png",
 			"pos": {
 				"x": 82,
@@ -519,7 +519,7 @@
 		"resWidth": 640,
 		"resHeight": 360,
 		"inventoryGridNum": 5,
-		"projectName": "cat and sandwich"
+		"projectName": "Cat And Sandwich"
 	},
 	"projectData": {
 		"idCounter": 27
