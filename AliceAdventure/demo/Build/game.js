@@ -1,23 +1,23 @@
 
-//===============create Game==================
+// =============== Create Game ==================
 var myGame = new GameManager();
- myGame.init(640,360,5);
+ myGame.init(640, 360, 5);
 
-//===============add Sound==================
+// =============== Add Sound ==================
 myGame.sound.add('door_23', './Resources/Assets/door.wav');
 myGame.sound.add('meow_happy_24', './Resources/Assets/meow_happy.wav');
 myGame.sound.add('meow_unhappy_25', './Resources/Assets/meow_unhappy.wav');
 myGame.sound.add('win_26', './Resources/Assets/win.wav');
 
-//===============create Scene================
+// =============== Create Scene ================
 myGame.sceneManager.createScenes(3);
 
-//===============create States================
+// =============== Create States ================
 myGame.initStateManager({});
 
-//===============create Objects==================
+// =============== Create Objects ==================
 
-var Living_room_2= Alice.Object.fromImage('./Resources/Assets/room_basic.png');
+var Living_room_2 = Alice.Object.fromImage('./Resources/Assets/room_basic.png');
 Living_room_2.name = 'Living_room_2';
 Living_room_2.anchor.set(0.5, 0.5);
 Living_room_2.x = 320;
